@@ -54,6 +54,12 @@ export const Button = styled.button`
 	border: none;
 	background-color: var(--primary-color);
 	color: white;
+	cursor: pointer;
+	transition: filter 250ms linear;
+
+	:hover {
+		filter: brightness(1.2);
+	}
 
 	@media screen and (min-width: 600px) {
 		width: 40%;

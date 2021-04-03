@@ -1,14 +1,23 @@
-import Jumbotron from './containers/jumbotron'
-import Footer from './containers/footer'
-import Accordion from './containers/accordion'
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
+import * as ROUTES from './constants/routes'
+import { Home, Browse, Signin, Signup } from './pages/'
 
 function App() {
   return (
-    <div>
-    	<Jumbotron />
-    	<Accordion />
-    	<Footer />
-    </div>
+    <Router>
+    	<Route exact path={ROUTES.SIGN_UP} >
+    		<Signup />
+    	</Route>
+    	<Route exact path={ROUTES.SIGN_IN} >
+    		<Signin />
+    	</Route>
+    	<Route exact path={ROUTES.BROWSE} >
+    		<Browse />
+    	</Route>
+    	<Route exact path={ROUTES.HOME}>
+    		<Home />
+    	</Route>
+    </Router>
   );
 }
 
