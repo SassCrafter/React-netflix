@@ -8,7 +8,8 @@ export const GlobalStyles = createGlobalStyle`
   }
 
   :root {
-    --primary-color: #e50914;
+    --primary-colors: #e50914;
+    --primary-color: #EB4242;
     --footer-color: #757575;
   }
 

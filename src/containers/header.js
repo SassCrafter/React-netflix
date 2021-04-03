@@ -1,15 +1,23 @@
 import React from 'react'
 import Header from '../components/header/'
-function HeaderContainer() {
+import * as Routes from '../constants/routes'
+import Logo from '../logo.svg'
+
+function HeaderContainer({ children }) {
 	return (
-		<div>
+		<Header.Container>
 			<Header>
-				<Header.Frame>
-					<Header.Logo src='/images' />
-					<Header.Button>Sign In</Header.Button>
-				</Header.Frame>
+				<Header.Relative>
+					<Header.Frame>
+						<Header.Logo to={Routes.HOME} src={Logo} alt='Netflix' />
+						<Header.ButtonLink to={Routes.SIGN_IN}>Sign In</Header.ButtonLink>
+					</Header.Frame>
+					<Header.Center>
+						{children}
+					</Header.Center>
+				</Header.Relative>
 			</Header>
-		</div>
+		</Header.Container>
 	)
 }
 

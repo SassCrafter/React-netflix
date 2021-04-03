@@ -8,12 +8,13 @@ export const Container = styled.div`
 `
 
 export const Form = styled.form`
-	width: 100%;
+	width: 90%;
 	max-width: 320px;
 	margin: 0 auto;
+	margin-bottom: 20px;
 
 	@media screen and (min-width: 600px) {
-		max-width: 500px;
+		max-width: 750px;
 	}
 `
 
@@ -43,6 +44,9 @@ export const Input = styled.input`
 		margin-bottom: 0;
 		font-size: 20px;
 	}
+	@media screen and (min-width: 900px) {
+		height: 70px;
+	}
 `
 
 export const Button = styled.button`
@@ -66,6 +70,10 @@ export const Button = styled.button`
 		height: 50px;
 		margin-left: 2px;
 	}
+	@media screen and (min-width: 900px) {
+		height: 70px;
+		font-size: 20px;
+	}
 `
 
 export const Title = styled.h3`
@@ -76,6 +84,17 @@ export const Title = styled.h3`
 
 	@media screen and (min-width: 600px) {
 		font-size: 24px;
+	}
+`
+
+export const Subtitle = styled.h4`
+	width: 80%;
+	margin: 0 auto 20px;
+	text-align: center;
+	font-size: 18px;
+
+	@media screen and (min-width: 600px) {
+		font-size: 22px;
 	}
 `
 

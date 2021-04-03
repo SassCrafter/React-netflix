@@ -1,7 +1,7 @@
 import React from 'react'
-import { Container, Title, Form, Input, Button, Icon, Group } from './styles/opt-form'
+import { Container, Title, Subtitle, Form, Input, Button, Icon, Group } from './styles/opt-form'
 
-function OptForm({ children, ...restProps }) {
+function OptForm({ children, subtitle=false, ...restProps }) {
 	return (
 		<Container {...restProps}>{children}</Container>
 	)
@@ -11,6 +11,10 @@ export default OptForm
 
 OptForm.Title = function OptFormTitle({ children, ...restProps }) {
 	return <Title {...restProps}>{children}</Title>
+}
+
+OptForm.Subtitle = function OptFormSubtitle({ children, ...restProps }) {
+	return <Subtitle {...restProps}>{children}</Subtitle>
 }
 
 OptForm.Form = function OptFormFunc({ children, ...restProps }) {
