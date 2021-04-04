@@ -24,7 +24,7 @@ export const Center = styled.div`
 
 export const Background = styled.div`
 	height: 100vh;
-	max-height: 800px;
+	max-height: 1000px;
 	background-image: url(${({ src }) => src ? `/images/misc/${src}` : '/images/misc/home-bg.jpg'});
 	background-repeat: no-repeat;
 	background-size: cover;

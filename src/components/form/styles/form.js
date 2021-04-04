@@ -1,5 +1,5 @@
 import styled from 'styled-components/macro'
-
+import { Link as ReactRouterLink } from 'react-router-dom'
 
 export const Container = styled.div`
 	width: 90%;
@@ -61,6 +61,11 @@ export const Submit = styled.button`
 	font-size: 20px;
 	font-weight: 500;
 	margin-bottom: 20px;
+
+	:disabled {
+		filter: brightness(0.4);
+		cursor: not-allowed;
+	}
 `
 
 export const Error = styled.h5`
@@ -70,6 +75,18 @@ export const Error = styled.h5`
 	background-color: var(--error-color);
 	color: white;
 `
+
 export const Text = styled.p`
+	margin-bottom: 15px;
+`
+
+export const TextSmall = styled.p`
 	font-size: 12px;
+`
+export const Link = styled(ReactRouterLink)`
+	color: white;
+
+	:hover {
+		text-decoration: underline;
+	}
 `

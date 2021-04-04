@@ -32,6 +32,10 @@ Header.Logo = function HeaderLogo({ to, ...restProps }) {
 		)
 }
 
-Header.ButtonLink = function HeaderButtonLink({ children, ...restProps }) {
-	return <ButtonLink {...restProps}>{children}</ButtonLink>
+Header.ButtonLink = function HeaderButtonLink({ children, buttonLinkIsVisible, ...restProps }) {
+	console.log('link', buttonLinkIsVisible);
+	return (
+		buttonLinkIsVisible ? <ButtonLink {...restProps}>{children}</ButtonLink>
+		: null
+	)
 }

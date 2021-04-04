@@ -1,5 +1,5 @@
 import React from 'react'
-import { Container, Title, FormEl, Input, Submit, Error, Text, TextSmall } from './styles/form'
+import { Container, Title, FormEl, Input, Submit, Error, Text, TextSmall, Link } from './styles/form'
 
 function Form({ children, ...restProps}) {
 	return (
@@ -30,6 +30,14 @@ Form.Submit = function FormSubmit ({ children, ...restProps }) {
 
 Form.Text = function FormText ({ children, ...restProps }) {
 	return <Text {...restProps}>{children}</Text>
+}
+
+Form.TextSmall = function FormTextSmall ({ children, ...restProps }) {
+	return <TextSmall {...restProps}>{children}</TextSmall>
+}
+
+Form.Link = function FormLink ({ children, ...restProps }) {
+	return <Link {...restProps}>{children}</Link>
 }
 
 Form.Error = function FormError({ children, ...restProps }) {
