@@ -59,7 +59,6 @@ function Signin() {
 						 </Form.Submit>
 						 <Form.Text>New to Netflix? <Form.Link to={Routes.SIGN_UP}>Sign up Now</Form.Link></Form.Text>
 						 <Form.TextSmall>This page is protected by Google reCAPTCHA to ensure you're not a bot.</Form.TextSmall>
-						}
 					</Form.FormEl>
 				</Form>
 			</HeaderContainer>
